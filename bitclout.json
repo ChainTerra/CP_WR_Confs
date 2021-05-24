@@ -1,0 +1,78 @@
+{
+    "enabled": true,
+    "coin": "BitClout",
+    "address": "BC1YLgRxJBJY3aCGRftn6fcgvK2ervJYXt87joA5oBcw4udZvzv4Rrj",
+    "donateaddress": "BC1YLgRxJBJY3aCGRftn6fcgvK2ervJYXt87joA5oBcw4udZvzv4Rrj",
+    "rewardRecipients": {
+        "BC1YLgRxJBJY3aCGRftn6fcgvK2ervJYXt87joA5oBcw4udZvzv4Rrj": 0.00,
+        "BC1YLgRxJBJY3aCGRftn6fcgvK2ervJYXt87joA5oBcw4udZvzv4Rrj": 0.00
+    },
+    "reward": "POW",
+    "paymentProcessing": {
+        "enabled": true,
+        "paymentInterval": 600,
+        "minimumPayment": 0.01,
+        "daemon": {
+            "host": "127.0.0.1",
+            "port": 19000,
+            "user": "REPLACE_THIS_WITH_RPC_USER",
+            "password": "REPLACE_THIS_WITH_RPC_PASSWD"
+        }
+    },
+
+    "ports": {
+        "3008": {
+            "diff": 12
+        },
+        "3032": {
+            "diff": 120,
+            "varDiff": {
+                "minDiff": 8,
+                "maxDiff": 512,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        },
+        "3256": {
+            "diff": 256
+        }
+    },
+
+    "daemons": [
+        {
+            "host": "127.0.0.1",
+            "port": 19000,
+            "user": "testuser",
+            "password": "testpass"
+        }
+    ],
+
+    "p2p": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 17000,
+        "disableTransactions": true
+    },
+
+    "mposMode": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 3306,
+        "user": "me",
+        "password": "mypass",
+        "database": "lnr",
+        "checkPassword": true,
+        "autoCreateWorker": false
+    },
+
+    "mongoMode": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "user": "",
+        "pass": "",
+        "database": "btclt",
+        "authMechanism": "DEFAULT"
+    }
+
+}
