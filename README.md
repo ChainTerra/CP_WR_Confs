@@ -1,5 +1,7 @@
 # CP_WR_Confs
 
+This is for **CloutPool**
+
 These are special configs for Hive OS and WildRig users or very specific mining farms.
 
 Download binaries + `git clone https://github.com/andru-kun/wildrig.git`
